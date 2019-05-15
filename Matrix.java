@@ -1,4 +1,4 @@
-package opt4;
+package Opt14;
 import java.util.Scanner;
 
 public class Matrix implements Cloneable{
@@ -13,7 +13,7 @@ public class Matrix implements Cloneable{
 		return N;
 	}
 
-	public void test(Scanner scan){
+	public void test(Scanner scan){ // array input for testing
 		System.out.println("Введите массив:");
 		for (int i = 0; i < N; i++)
 			for (int j = 0; j < N; j++){
@@ -53,7 +53,7 @@ public class Matrix implements Cloneable{
 		}
 		
 	}
-	public void printLongestIncreasingSequence(){
+	public void printLongestIncreasingSequence(){ // prints longest increasing sequence of elements
 		int maxLength = 1;
 		int iMaxBeg = 0, jMaxBeg = 0;
 		int iBeg = 0, jBeg = 0;
@@ -101,7 +101,7 @@ public class Matrix implements Cloneable{
 		}
 	}
 
-	public void sumBetweenPositive(){
+	public void sumBetweenPositive(){ //finds sum of elements placed between two positive numbers in a row
 		boolean add;
 		int sum = 0;
 		int positiveCount;

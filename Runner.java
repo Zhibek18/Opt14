@@ -1,8 +1,8 @@
-package opt4;
+package Opt14;
 import java.util.Scanner;
 
 public class Runner{
-	public static void printSorted(Matrix matrix, int i ){
+	public static void printSorted(Matrix matrix, int i ){//made a separate method to save original
 		matrix = (Matrix)matrix.clone();
 		matrix.sortByColumn(i);
 		System.out.print("Sorted by "+ i +" column");

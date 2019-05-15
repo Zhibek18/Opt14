@@ -1,7 +1,7 @@
-package opt4;
+package Opt14;
 import java.util.Random;
 
-public class MatrixFactory{
+public class MatrixFactory{ // filles matrix with random numbers
 	public static Matrix createRandomized(int n){
 		final int M = 10;
 		Random rnd = new Random();
