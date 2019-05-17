@@ -1,4 +1,4 @@
-package Opt14;
+package Opt14.kakimzhanova.opt4.matrix;
 import java.util.Scanner;
 
 public class Runner{

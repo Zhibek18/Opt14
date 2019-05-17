@@ -1,4 +1,4 @@
-package Opt14;
+package Opt14.kakimzhanova.opt4.matrix;
 import java.util.Scanner;
 
 public class Matrix implements Cloneable{
@@ -15,10 +15,11 @@ public class Matrix implements Cloneable{
 
 	public void test(Scanner scan){ // array input for testing
 		System.out.println("Введите массив:");
-		for (int i = 0; i < N; i++)
+		for (int i = 0; i < N; i++){
 			for (int j = 0; j < N; j++){
 				matrix[i][j] = scan.nextInt();
 			}
+		}
 	}
 	public int getElement(int i, int j){
 		return matrix[i][j];
@@ -63,7 +64,6 @@ public class Matrix implements Cloneable{
 			for (int j = 0; j < N; j++){
 				if ((i == 0)&&(j == 0))
 					continue;
-
 				if (matrix[i][j] > prev){
 					length++;
 				}
@@ -85,10 +85,12 @@ public class Matrix implements Cloneable{
 		int k;
 		int l = 0;
 		for (int i = iMaxBeg; i < N; i++){
-			if (i == iMaxBeg)
+			if (i == iMaxBeg){
 				k = jMaxBeg;
-			else 
+			}
+			else {
 				k = 0;
+			}
 			for (int j = k; j < N; j++){
 				if (l == maxLength){
 					System.out.println();
@@ -117,8 +119,9 @@ public class Matrix implements Cloneable{
 					positiveCount++;
 				}
 				else{
-					if (add)
+					if (add){
 						sum += matrix[i][j];
+					}
 				}
 			}
 			System.out.println(" sum =" + sum);
